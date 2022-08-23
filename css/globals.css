@@ -1,0 +1,41 @@
+body{
+    font-family: "Rubik", "DM Serif Display";
+    color: #402B2B;
+    background-image: url(../images/Background_Scene.svg);
+    background-position: left 114px top -68px;
+    height: 1005px;
+    background-repeat: no-repeat;
+    background-color: #FEF8F5;
+    
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1110px;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li{
+
+    display: block;
+}
+
+footer{
+  position: absolute;
+  left: 0;
+  bottom: -2600px;
+  width: 1518px;
+    height: 205px;
+  color: #FFFFFF;
+  text-align: center;
+  background-color:#F16353;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+
+}

@@ -1,0 +1,51 @@
+.header__nav ul{
+display: flex;
+}
+
+.header__nav-item{
+    margin-right: 97px;
+    margin-top: 61px;
+    align-content: flex-end;
+    position: relative;
+    font-size: 16px;
+    left: 580px;
+       
+}
+
+.header__contact-us{
+display: flex;
+
+}
+.header__contact-us{
+    display: flex;
+    margin-top: -40px;
+    margin-left: 1027px;
+    width: 158px;
+    height: 60px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    background-color: #EE4D47;
+    color: #FFFFFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;    
+}
+
+.header__title{
+
+    font-family: "DM Serif Display";
+    font-size: 32px;
+    margin-right: 152px;
+    color: #FFFFFF;
+    
+}
+.header__logo{
+
+position: absolute;
+width: 212px;
+height: 50px;
+margin-top: -60px;
+    
+}
+
