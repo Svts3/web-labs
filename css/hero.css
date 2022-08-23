@@ -281,20 +281,21 @@
 .footer__facebook__logo{
     position: absolute;
     margin-left: 200px;
-    margin-top: -30px;
 
 }
 .footer__twitter__logo{
     position: absolute;
     margin-left: 250px;
-    margin-top: -30px;
 
 }
 .footer__instagram__logo{
     position: absolute;
     margin-left: 300px;
-    margin-top: -30px;
 
+}
+.footer__companies{
+    margin-top: -60px;
+    margin-right: -300px;
 }
 
 
