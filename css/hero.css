@@ -1,0 +1,303 @@
+.hero__heading{
+    font-family: "DM Serif Display";
+    font-size: 100px;
+    color: #FFFFFF;
+    line-height: 100px;
+    width: 741px;
+    margin-left: 60px;
+}
+.hero__heading_get-started{
+    border-radius: 5px;
+    width: 220px;
+    height: 60px;
+    background-color:#EE4D47;
+    color: #FFFFFF;
+    border: none;
+    font-weight: 700;
+    margin-left: 50px;
+
+}
+
+.hero__heading_car{
+
+    position: absolute;
+    margin-top: 130px;
+    left: 0px;
+    
+}
+.intro{
+    font-family: "Rubik";
+}
+.intro__image{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 700px;
+}
+.into__inner_about-us{
+    position: absolute;
+    margin-top: 690px;
+    color: #EE4D47;
+    font-weight: 700;
+    font-size: 24px;
+}
+.into__inner_title{
+    position: absolute;
+    margin-top: 750px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    width: 480px;
+}
+.intro__inner_background{
+    margin-top: 1000px;
+}
+.intro_inner_title{
+    margin-top: -130px;
+    margin-left: 20px;
+    width: 460px;
+
+}
+
+.intro_inner_paragraph{
+    
+    width: 460px;
+    left: 251px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-left: 50px;
+    margin-top: -130px;
+    
+
+
+}
+.intro__inner_background{
+    pointer-events: none;
+}
+.intro__image2{
+    position: absolute;
+    width: 720.19px;
+    height: 678.76px;
+    left: 134px;
+    top: 1755px;
+}
+.intro_inner_how-to-apply{
+   position: absolute;
+   height: 50px;
+   width: 265px;
+   left: 911.447265625px;
+   top: 1856px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #EE4D47;
+}
+.intro__inner_paragraph2{
+    position: absolute;
+    width: 455px;
+    height: 287px;
+    left: 911.45px;
+    top: 1946px;
+
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+}
+.into__inner_about-us2{
+    position: absolute;
+    margin-left: 700px;
+    margin-bottom: 200px;
+    color: #EE4D47;
+    font-weight: 700;
+    font-size: 24px;
+    bottom: -2000px;
+}
+.into__inner_our-awesome-clients{
+    position: absolute;
+    font-family: "DM Serif Display";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67px;
+    margin-left: 550px;
+    margin-top: 850px;
+}
+
+.intro__inner_client1{
+    position: absolute;
+    width: 420px;
+    height: 360px;
+    left: 90px;
+    top: 2671px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.intro__inner_client2{
+    position: absolute;
+    width: 420px;
+    height: 360px;
+    left: 570px;
+    top: 2671px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+.intro__inner_client3{
+    position: absolute;
+    width: 420px;
+    height: 360px;
+    right: 50px;
+    top: 2671px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.intro__inner_feedback1{
+    width: 320px;
+    height: 140px;
+    left: 198px;
+    top: 2731px;
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 50px;
+    margin-top: 70px;
+
+
+}
+.intro__inner_feedback2{
+    width: 320px;
+    height: 140px;
+    left: 198px;
+    top: 2731px;
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 60px;
+    margin-top: 70px;
+
+
+}
+.intro__inner_feedback3{
+    width: 320px;
+    height: 140px;
+    left: 198px;
+    top: 2731px;
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 60px;
+    margin-top: 70px;
+}
+
+.intro__inner_client1_photo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 198px;
+    top: 2931px;
+    margin-left: -150px;
+    margin-top: -2665px;
+}
+.intro__inner_client1_name{
+    position: absolute;
+    font-family: "Roboto";
+    margin-top: 290px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.intro__inner_client2_photo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 198px;
+    top: 2931px;
+    margin-left: -150px;
+    margin-top: -2665px;
+}
+.intro__inner_client2_name{
+    position: absolute;
+    font-family: "Roboto";
+    margin-top: 290px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.intro__inner_client3_photo{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 198px;
+    top: 2931px;
+    margin-left: -150px;
+    margin-top: -2665px;
+}
+.intro__inner_client3_name{
+    position: absolute;
+    font-family: "Roboto";
+    margin-top: 290px;
+    margin-left: 130px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.footer__copyright{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.footer__copyright{
+    text-align: left;
+    margin-top: 90px;
+}
+.footer__logo{
+    margin-top: -60px;
+}
+.footer__facebook__logo{
+    position: absolute;
+    margin-left: 200px;
+
+}
+.footer__twitter__logo{
+    position: absolute;
+    margin-left: 250px;
+
+}
+.footer__instagram__logo{
+    position: absolute;
+    margin-left: 300px;
+
+}
+.footer__companies{
+    margin-top: -60px;
+    margin-right: -300px;
+}
+
+
+
+
