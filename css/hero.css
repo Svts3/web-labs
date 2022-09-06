@@ -6,6 +6,26 @@
     width: 741px;
     margin-left: 60px;
 }
+@media screen and (max-width:860px) {
+    .hero__inner > h1{
+        display: flex;
+        margin-left: 10px;
+        line-height: 50px;
+        max-width: 320px;
+
+    }
+
+    .header__logo{
+        scale: 70%;
+        margin-left: -50px;
+        margin-top: -90px;
+    }
+    .hero__heading{
+        display: flex;
+        font-size: 200%;
+        width:100%;
+    }
+}
 .hero__heading_get-started{
     border-radius: 5px;
     width: 220px;
@@ -17,6 +37,40 @@
     margin-left: 50px;
 
 }
+.hero__heading_get-started span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .hero__heading_get-started span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .hero__heading_get-started:hover span {
+    padding-right: 25px;
+  }
+  
+  .hero__heading_get-started:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+@media screen and (max-width:860px){
+    .hero__heading_get-started{
+        margin-left: 6px;
+        width: 60%;
+        max-width: 200px;
+        height:50px
+    }
+}
 
 .hero__heading_car{
 
@@ -25,278 +79,28 @@
     left: 0px;
     
 }
-.intro{
-    font-family: "Rubik";
+@media screen and (max-width:860px) {
+    .hero__heading_car{
+        
+        margin-top: 400px;
+        margin-left: -260px;
+        width: 500px;
+    }
 }
-.intro__image{
-    position: absolute;
-    margin-top: 550px;
-    margin-left: 700px;
-}
-.into__inner_about-us{
-    position: absolute;
-    margin-top: 690px;
-    color: #EE4D47;
-    font-weight: 700;
-    font-size: 24px;
-}
-.into__inner_title{
-    position: absolute;
-    margin-top: 750px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 40px;
-    width: 480px;
-}
-.intro__inner_background{
-    margin-top: 1000px;
-}
-.intro_inner_title{
-    margin-top: -130px;
-    margin-left: 20px;
-    width: 460px;
-
+@media screen and (max-width:540px) {
+    .hero__heading_car{
+        display: none;
+        margin-top: 300px;
+        margin-left: -350px;
+        width: 500px;
+    }
 }
 
-.intro_inner_paragraph{
-    
-    width: 460px;
-    left: 251px;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    margin-left: 50px;
-    margin-top: -130px;
-    
 
 
-}
-.intro__inner_background{
-    pointer-events: none;
-}
-.intro__image2{
-    position: absolute;
-    width: 720.19px;
-    height: 678.76px;
-    left: 134px;
-    top: 1755px;
-}
-.intro_inner_how-to-apply{
-   position: absolute;
-   height: 50px;
-   width: 265px;
-   left: 911.447265625px;
-   top: 1856px;
-
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #EE4D47;
-}
-.intro__inner_paragraph2{
-    position: absolute;
-    width: 455px;
-    height: 287px;
-    left: 911.45px;
-    top: 1946px;
-
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 40px;
-}
-.into__inner_about-us2{
-    position: absolute;
-    margin-left: 700px;
-    margin-bottom: 200px;
-    color: #EE4D47;
-    font-weight: 700;
-    font-size: 24px;
-    bottom: -2000px;
-}
-.into__inner_our-awesome-clients{
-    position: absolute;
-    font-family: "DM Serif Display";
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 67px;
-    margin-left: 550px;
-    margin-top: 850px;
-}
-
-.intro__inner_client1{
-    position: absolute;
-    width: 420px;
-    height: 360px;
-    left: 90px;
-    top: 2671px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-.intro__inner_client2{
-    position: absolute;
-    width: 420px;
-    height: 360px;
-    left: 570px;
-    top: 2671px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    
-}
-.intro__inner_client3{
-    position: absolute;
-    width: 420px;
-    height: 360px;
-    right: 50px;
-    top: 2671px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-}
-.intro__inner_feedback1{
-    width: 320px;
-    height: 140px;
-    left: 198px;
-    top: 2731px;
-    
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    margin-left: 50px;
-    margin-top: 70px;
 
 
-}
-.intro__inner_feedback2{
-    width: 320px;
-    height: 140px;
-    left: 198px;
-    top: 2731px;
-    
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    margin-left: 60px;
-    margin-top: 70px;
 
-
-}
-.intro__inner_feedback3{
-    width: 320px;
-    height: 140px;
-    left: 198px;
-    top: 2731px;
-    
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 30px;
-    margin-left: 60px;
-    margin-top: 70px;
-}
-
-.intro__inner_client1_photo{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 198px;
-    top: 2931px;
-    margin-left: -150px;
-    margin-top: -2665px;
-}
-.intro__inner_client1_name{
-    position: absolute;
-    font-family: "Roboto";
-    margin-top: 290px;
-    margin-left: 130px;
-    font-weight: 700;
-    font-size: 16px;
-}
-.intro__inner_client2_photo{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 198px;
-    top: 2931px;
-    margin-left: -150px;
-    margin-top: -2665px;
-}
-.intro__inner_client2_name{
-    position: absolute;
-    font-family: "Roboto";
-    margin-top: 290px;
-    margin-left: 130px;
-    font-weight: 700;
-    font-size: 16px;
-}
-.intro__inner_client3_photo{
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 198px;
-    top: 2931px;
-    margin-left: -150px;
-    margin-top: -2665px;
-}
-.intro__inner_client3_name{
-    position: absolute;
-    font-family: "Roboto";
-    margin-top: 290px;
-    margin-left: 130px;
-    font-weight: 700;
-    font-size: 16px;
-}
-.footer__copyright{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
-
-}
-.footer__copyright{
-    text-align: left;
-    margin-top: 90px;
-}
-.footer__logo{
-    margin-top: -60px;
-}
-.footer__facebook__logo{
-    position: absolute;
-    margin-left: 200px;
-
-}
-.footer__twitter__logo{
-    position: absolute;
-    margin-left: 250px;
-
-}
-.footer__instagram__logo{
-    position: absolute;
-    margin-left: 300px;
-
-}
-.footer__companies{
-    margin-top: -60px;
-    margin-right: -300px;
-}
 
 
 

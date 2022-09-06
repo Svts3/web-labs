@@ -1,0 +1,532 @@
+@media screen and (min-width:3800px) {
+
+    .header__nav ul {
+        display: flex;
+    }
+
+    #header__nav-item {
+        margin-right: 291px;
+        margin-top: 183px;
+        align-content: flex-end;
+        position: relative;
+        display: inline;
+        font-size: 48px;
+        left: 1740px;
+        
+    }
+
+    .header__contact-us {
+        display: absolute;
+        
+    }
+
+    #menuToggle {
+        display: none;
+    }
+
+    .header__contact-us {
+        display: flex;
+        margin-top: -140px;
+        margin-left: 3072px;
+        width: 474px;
+        height: 180px;
+        text-align: center;
+        font-size: 48px;
+        display: block;
+        background-color: #EE4D47;
+        color: #FFFFFF;
+        font-weight: 2100;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .header__title {
+
+        font-family: "DM Serif Display";
+        font-size: 96px;
+        margin-right: 456px;
+        color: #FFFFFF;
+
+    }
+
+    .header__logo {
+
+        position: absolute;
+        width: 636px;
+        height: 150px;
+        margin-top: -130px;
+        padding-left: 300px;
+
+    }
+
+
+
+
+
+
+
+    .hero__heading {
+        font-family: "DM Serif Display";
+        font-size: 200px;
+        color: #FFFFFF;
+        line-height: 300px;
+        width: 2223px;
+        margin-left: 180px;
+        padding-left: 50px;
+    }
+
+    .hero__heading_get-started {
+        border-radius: 5px;
+        width: 20%;
+        height: 180px;
+        background-color: #EE4D47;
+        color: #FFFFFF;
+        border: none;
+        font-weight: 700;
+        font-size: 48px;
+        margin-left: 500px;
+        
+
+    }
+
+    .hero__heading_get-started span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .hero__heading_get-started span:after {
+        content: '\2192';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -60px;
+        transition: 0.5s;
+    }
+
+    .hero__heading_get-started:hover span {
+        padding-right: 80px;
+    }
+
+    .hero__heading_get-started:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+
+
+
+    .hero__heading_car {
+
+        position: absolute;
+        margin-top: 390px;
+        left: 0px;
+        width: 1700px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .intro {
+        font-family: "Rubik";
+    }
+
+    .intro__image {
+        position: absolute;
+        margin-top: 1700px;
+        margin-left: 1600px;
+        width: 50%;
+        
+    }
+
+    .into__inner_about-us {
+        position: absolute;
+        margin-top: 2070px;
+        color: #EE4D47;
+        font-weight: 700;
+        font-size:72px;
+    }
+
+    .into__inner_title {
+        position: absolute;
+        margin-top: 2250px;
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 120px;
+        width: 1440px;
+    }
+
+    .intro__inner_background {
+        margin-top: 3000px;
+        width: 50%;
+    }
+
+    .intro_inner_title {
+        margin-top: -390px;
+        margin-left: 60px;
+        width: 1380px;
+
+    }
+
+    .intro_inner_paragraph {
+
+        width: 1380px;
+        left: 753px;
+        font-size: 72px;
+        font-weight: 500;
+        line-height: 108px;
+        margin-left: 150px;
+        margin-top: -390px;
+    }
+
+
+
+    .intro__inner_background {
+        pointer-events: none;
+    }
+
+    .intro__image2 {
+        position: absolute;
+        width: 2160.57px;
+        height: 2036.28px;
+        left: 10px;
+        top: 5265px;
+    }
+
+    .intro_inner_how-to-apply {
+        position: absolute;
+        height: 150px;
+        width: 795px;
+        left: 2300px;
+        top: 5568px;
+
+        font-size: 72px;
+        font-weight: 700;
+        line-height: 120px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #EE4D47;
+    }
+
+    .intro__inner_paragraph2 {
+        position: absolute;
+        width: 1365px;
+        height: 861px;
+        left:2100px;
+        top: 5838px;
+
+        font-weight: 300;
+        font-size: 54px;
+        line-height: 120px;
+    }
+
+
+
+    .into__inner_about-us2 {
+        position: absolute;
+        margin-top: 2250px;
+        text-align: center;
+        color: #EE4D47;
+        font-weight: 700;
+        font-size: 72px;
+        padding-left: 1995px;
+
+    }
+
+    .into__inner_our-awesome-clients {
+        position: absolute;
+        font-family: "DM Serif Display";
+        font-size: 144px;
+        font-weight: 400;
+        line-height: 201px;
+        margin-top: 2550px;
+        text-align: center;
+        padding-left: 1560px;
+
+    }
+
+
+    .intro__inner_clients {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .intro__inner_client1 {
+        margin: 80px;
+        display: flex;
+        position: relative;
+        width: 1100px;
+        height: 1080px;
+        margin-top: 2890px;
+
+
+        background: #FFFFFF;
+        box-shadow: 0px 180px 360px rgba(238, 77, 71, 0.1);
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 180px;
+    }
+
+    .intro__inner_client2 {
+        margin: 80px;
+        display: flex;
+        position: relative;
+        width: 1100px;
+        height: 1080px;
+        top: 1400px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 60px 420px rgba(238, 77, 71, 0.1);
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+
+    }
+
+    .intro__inner_client3 {
+        margin: 80px;
+        display: flex;
+        width: 1100px;
+        height: 1080px;
+        top: 1400px;
+
+        background: #FFFFFF;
+        box-shadow: 0px 60px 120px rgba(238, 77, 71, 0.1);
+        border-radius: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 60px;
+    }
+
+
+    .intro__inner_feedback1 {
+        width: 960px;
+        height: 420px;
+        left: 594px;
+        top: 8193px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 90px;
+        margin-left: 150x;
+        margin-top: 210px;
+
+
+    }
+
+    .intro__inner_feedback2 {
+        width: 900px;
+        height: 420px;
+        left: 594px;
+        top: 8193px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 90px;
+        margin-left: 180px;
+        margin-top: 210px;
+
+
+    }
+
+    .intro__inner_feedback3 {
+        width: 960px;
+        height: 420px;
+        left: 594px;
+        top: 8193px;
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 90px;
+        margin-left: 180px;
+        margin-top: 210px;
+    }
+
+    .intro__inner_client1_photo {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 594px;
+        top: 8193px;
+        margin-left: -450px;
+        margin-top: -7400px;
+    }
+
+    .intro__inner_client1_name {
+        position: absolute;
+        font-family: "Roboto";
+        margin-top: 870px;
+        margin-left: 390px;
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .intro__inner_client2_photo {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 594px;
+        top: 8793px;
+        margin-left: -450px;
+        margin-top: -7995px;
+    }
+
+    .intro__inner_client2_name {
+        position: absolute;
+        font-family: "Roboto";
+        margin-top: 870px;
+        margin-left: 390px;
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    .intro__inner_client3_photo {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: 594px;
+        top: 8793px;
+        margin-left: -450px;
+        margin-top: -7995px;
+    }
+
+    .intro__inner_client3_name {
+        position: absolute;
+        font-family: "Roboto";
+        margin-top: 870px;
+        margin-left: 390px;
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+
+
+
+
+
+
+
+
+    body {
+        font-family: "Rubik", "DM Serif Display";
+        color: #402B2B;
+        background-image: url(../images/Background_Scene.svg);
+        background-position: left 342px top -204px;
+        height: 3015px;
+        background-repeat: no-repeat;
+        background-color: #FEF8F5;
+        background-size: 3800px, 2093px;
+        overflow-x: hidden;
+
+    }
+
+
+
+    .container {
+        margin: 0 auto;
+        max-width: 3330px;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    li {
+
+        display: block;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        bottom: -7800px;
+        width: 3800px;
+        height: 615px;
+        color: #FFFFFF;
+        text-align: center;
+        background-color: #F16353;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 0em;
+
+    }
+
+    button {
+        transition: 0.4s;
+    }
+
+    button:hover {
+        color: white;
+        background-color: #c23939;
+    }
+
+
+
+
+
+
+
+    .footer__copyright {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+    .footer__copyright {
+        text-align: left;
+        margin-top: 270px;
+    }
+
+    .footer__logo {
+        position: absolute;
+        left: 850px;
+        top: 105px;
+        width: 40%;
+    }
+
+    .footer__companies {
+        position: absolute;
+        margin-left: 2700px;
+        top: 210px;
+        display: flex;
+        float: left;
+        justify-content: space-between;
+
+    }
+
+    .footer__companies li {
+        padding: 60px;
+    }
+    .footer__facebook__logo{
+        width: 300%;
+    }
+    .footer__twitter__logo{
+        width: 300%;
+    }
+    .footer__instagram__logo{
+        width: 300%;
+    }
+
+}
