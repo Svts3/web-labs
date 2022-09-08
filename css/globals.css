@@ -8,11 +8,19 @@ body{
     background-color: #FEF8F5;
     
 }
+@media screen and (max-width:860px) {
+    body{
+        background-position: center top -68px;
+        overflow-x: hidden;
+    }
+}
+
 
 .container{
     margin: 0 auto;
     max-width: 1110px;
 }
+
 
 a{
     text-decoration: none;
@@ -39,3 +47,43 @@ footer{
     letter-spacing: 0em;
 
 }
+button{
+    transition: 0.4s;
+}
+
+button:hover{
+    color: white;
+   background-color: #c23939;
+}
+@media screen and (max-width:860px) {
+
+.container{
+    max-width: 70%;
+}
+.footer{
+    bottom: -3500px;
+}    
+
+}
+@media screen and (max-width:860px){
+
+    :root{
+        font-size: 12px;
+    }
+
+    
+}
+
+@media screen and (min-width:860px) and (max-width:1500px){
+    body{
+        margin: 0 auto;  
+        padding-left: 200px; 
+        text-align: left;
+    }
+    footer{
+        top: 4000px;
+    }
+}
+
+
+

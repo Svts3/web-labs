@@ -1,116 +1,148 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-<link href="css/normalize.min.css" rel='stylesheet'>
-<link href="css/reset.min.css" rel='stylesheet'>
-<link href="css/styles.css" rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="css/normalize.min.css" rel='stylesheet'>
+    <link href="css/reset.min.css" rel='stylesheet'>
+    <link href="css/styles.css" rel='stylesheet'>
 </head>
+
 <body>
-<section class="hero">
-    <div class="container">
-        <header class="header">
-            <nav class="header__nav">
-                <ul>
-                    <li class="header__nav-item"><a>About</a></li>
-                    <li class="header__nav-item"><a>How to</a></li>
-                    <li class="header__nav-item"><a>FAQs</a></li>
-                    
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul id="header__nav-items">
+                        <li id="header__nav-item"><span><a>About</a></span></li>
+                        <li id="header__nav-item"><span><a>How to</a></span></li>
+                        <li id="header__nav-item"><span><a>FAQs</a></span></li>
+
+                    </ul>
+                    <div id="menuToggle">
+
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu">
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#">
+                                <li>About</li>
+                            </a>
+                            <a href="#">
+                                <li>Info</li>
+                            </a>
+                            <a href="#">
+                                <li>Contact us</li>
+                            </a>
+                        </ul>
+                    </div>
+                </nav>
+                <button class="header__contact-us">Contact Us</button>
+                <img class="header__logo" src="images/logo.svg">
+            </header>
+
+        </div>
+        <div class="container" id="container_id">
+            <div class="hero__inner">
+                <h1 class="hero__heading">
+                    Your awesome traffic permit consultant.
+                </h1>
+                <button class="hero__heading_get-started"><span>Get started</span></button>
+                <img class="hero__heading_car" src="images/car.svg">
+            </div>
+        </div>
+    </section>
+    <section class="intro">
+        <div class="container">
+            <img class="intro__image" src="images/intro1.svg">
+            <div class="intro__inner">
+                <h5 class="into__inner_about-us">About us</h5>
+                <p class="into__inner_title">The occupational traffic permit is one of
+                    the most important things in the company when
+                    carrying out freight transport. In fact, it is
+                    a prerequisite for doing business traffic at all. </p>
+            </div>
+            <img class="intro__inner_background" src="./images/intro_title.svg">
+            <p class="intro_inner_paragraph">How do you do when you need to obtain
+                a commercial traffic permit for freight transport to your business?</p>
+        </div>
+    </section>
+    <section class="intro2">
+        <div class="container">
+            <img class="intro__image2" src="images/intro2.svg">
+            <h5 class="intro_inner_how-to-apply">How to apply</h5>
+            <p class="intro__inner_paragraph2">When applying for a traffic permit, there are certain requirements
+                that you must meet that are included in the examination: requirements for
+                professional knowledge, solid establishment, good reputation and financial resources.
+                Important to remember is to confirm your application for a traffic permit by the
+                company's company signer or CEO.</p>
+        </div>
+    </section>
+
+    <section class="intro">
+        <div class="grid__container">
+            <h5 class="into__inner_about-us2">About us</h5>
+            <h2 class="into__inner_our-awesome-clients">Our Awesome Clients</h2>
+            <div class="intro__inner_clients">
+                <div class="intro__inner_client1">
+                    <p class="intro__inner_feedback1">
+                        Yes, you will need to have the land owner sign the permit
+                        application as the Permittee, and you sign the permit as
+                        the Applicant or Agent for the Permittee.
+                    </p>
+                    <img class="intro__inner_client1_photo" src="images/client1.svg">
+                    <p class="intro__inner_client1_name">Isak Pettersson</p>
+                </div>
+                <div class="intro__inner_client2">
+                    <p class="intro__inner_feedback2">From most barricade or traffic control companies
+                        located in the phone book.They employ certified Traffic Control Supervisors
+                        (TCS) who can generate and certify the traffic control plan. </p>
+                    <img class="intro__inner_client2_photo" src="images/client2.svg">
+                    <p class="intro__inner_client2_name">Simon Sandberg</p>
+                </div>
+                <div class="intro__inner_client3">
+                    <p class="intro__inner_feedback3">An A-Line, or access restriction deed
+                        is a property right that has been obtained by CDOT for the sole
+                        purpose of prohibiting direct</p>
+                    <img class="intro__inner_client3_photo" src="images/client3.svg">
+                    <p class="intro__inner_client3_name">Isak Pettersson</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright-div">
+                <p class="footer__copyright">Copyright @ 2019</p>
+            </div>
+            <div class="footer__logo">
+                <img class="footer__logo" src="images/logo.svg">
+            </div>
+            <div class="footer__companies-div">
+                <ul class="footer__companies">
+                    <li><a><img class="footer__facebook__logo" src="images/facebook_logo.svg"></a></li>
+                    <li><a><img class="footer__twitter__logo" src="images/twitter_logo.svg"></a></li>
+                    <li><a><img class="footer__instagram__logo" src="images/instagram_logo.svg"></a></li>
+
                 </ul>
-            </nav>
-            <button class="header__contact-us">Contact Us</button>
-            <img class="header__logo" src="images/logo.svg">
-        </header>
-
-    </div>
-    <div class="container hero">
-        <div class="hero__inner">
-            <h1 class="hero__heading">
-                Your awesome traffic permit consultant.
-            </h1>
-            <button class="hero__heading_get-started">Get started →</button>
-            <img class="hero__heading_car" src="images/car.svg">
-        </div>
-    </div>
-</section>
-<section class="intro">
-    <div class="container">
-        <img class="intro__image" src="images/intro1.svg">
-        <div class="intro__inner">
-            <h5 class="into__inner_about-us">About us</h5>
-            <p class="into__inner_title">The occupational traffic permit is one of 
-                the most important things in the company when
-                 carrying out freight transport.  In fact, it is
-                  a prerequisite for doing business traffic at all. </p>
-        </div>
-        <img  class="intro__inner_background" src="./images/intro_title.svg">
-        <p class="intro_inner_paragraph">How do you do when you need to obtain 
-            a commercial traffic permit for freight transport to your business?</p>
-        </div>
-</section>
-<section class="intro">
-    <div class="container">
-        <img class="intro__image2" src="images/intro2.svg">
-        <h5 class="intro_inner_how-to-apply">How to apply</h5>
-        <p class="intro__inner_paragraph2">When applying for a traffic permit, there are certain requirements
-             that you must meet that are included in the examination: requirements for
-              professional knowledge, solid establishment, good reputation and financial resources.
-             Important to remember is to confirm your application for a traffic permit by the
-              company's company signer or CEO.</p>
-    </div>
-</section>
-
-<section class="intro">
-    <div class="grid__container">
-        <h5 class="into__inner_about-us2">About us</h5>
-        <h2 class="into__inner_our-awesome-clients">Our Awesome Clients</h2>
-        
-            <div class="intro__inner_client1">
-                <p class="intro__inner_feedback1">
-                    Yes, you will need to have the land owner sign the permit 
-                    application as the Permittee, and you sign the permit as
-                     the Applicant or Agent for the Permittee.
-                </p>
-                <img class="intro__inner_client1_photo" src="images/client1.svg">
-                <p class="intro__inner_client1_name">Isak Pettersson</p>
             </div>
-            <div class="intro__inner_client2">
-                <p class="intro__inner_feedback2">From most barricade or traffic control companies
-                     located in the phone book.They employ certified Traffic Control Supervisors
-                      (TCS) who can generate and certify the traffic control plan. </p>
-                      <img class="intro__inner_client2_photo" src="images/client2.svg">
-                      <p class="intro__inner_client2_name">Simon Sandberg</p>
-            </div>
-            <div class="intro__inner_client3">
-                <p class="intro__inner_feedback3">An A-Line, or access restriction deed
-                     is a property right that has been obtained by CDOT for the sole
-                      purpose of prohibiting direct</p>
-                      <img class="intro__inner_client3_photo" src="images/client3.svg">
-                      <p class="intro__inner_client3_name">Isak Pettersson</p>
-            </div>
-        
-    </div>
-
-</section>
-
-<footer>
-    <div class="container">
-            <p class="footer__copyright">Copyright @ 2019</p>
-            <img class="footer__logo" src="images/logo.svg">
-            <ul class="footer__companies">
-                <li><a><img class="footer__facebook__logo" src="images/facebook_logo.svg"></a></li>
-                <li><a><img class="footer__twitter__logo" src="images/twitter_logo.svg"></a></li>
-                <li><a><img class="footer__instagram__logo" src="images/instagram_logo.svg"></a></li>
-                
-            </ul>
-        
         </div>
 
-</footer>
+    </footer>
 
 </body>
+
 </html>

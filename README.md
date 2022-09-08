@@ -1,17 +1,13 @@
 # web-labs
 
-# 1 lab task: 
-- Create a landing page following the given design (Figma).
+# 2 lab task: 
+Improve a landing page following the given design (same as previous) by adding full responsiveness and some animation.
 
 # Requirements:
-- Use of semantic tags (header, nav, ul, footer, etc.) wherever is necessary
+- The website should be partly responsive: required: for 320px (iPhone 5s)  2560px (4K screens).
   
-- All fonts, colour palette, elements sizes must strictly match the design.
+- The header should collapse to a hamburger on small screens.
   
-- Pixel perfect is also not required, BUT your website should visually match the design template (i.e. If the element is horizontally centred on the design, it should look centred on the website)
+- The website must contain animations (at least 3). Can be made in any possible way, preferably with css properties (animation/transition).
   
-- All class names must not be meaningless (i.e. class=”myClass”) and should follow the same naming convention, preferably BEM, but you could come up with your own (just be consistent)
-  
-- Basic cross-browser support (website should look correctly on last versions of modern browsers (Chrome, Safari, Edge)
-  
-- Responsiveness is not required
+- Your project should be logically structured
