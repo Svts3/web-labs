@@ -1,148 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=DM Serif Display' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+
     <link href="css/normalize.min.css" rel='stylesheet'>
     <link href="css/reset.min.css" rel='stylesheet'>
     <link href="css/styles.css" rel='stylesheet'>
 </head>
 
 <body>
-    <section class="hero">
-        <div class="container">
-            <header class="header">
-                <nav class="header__nav">
-                    <ul id="header__nav-items">
-                        <li id="header__nav-item"><span><a>About</a></span></li>
-                        <li id="header__nav-item"><span><a>How to</a></span></li>
-                        <li id="header__nav-item"><span><a>FAQs</a></span></li>
-
-                    </ul>
-                    <div id="menuToggle">
-
-                        <input type="checkbox" />
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                        <ul id="menu">
-                            <a href="#">
-                                <li>Home</li>
-                            </a>
-                            <a href="#">
-                                <li>About</li>
-                            </a>
-                            <a href="#">
-                                <li>Info</li>
-                            </a>
-                            <a href="#">
-                                <li>Contact us</li>
-                            </a>
-                        </ul>
-                    </div>
-                </nav>
-                <button class="header__contact-us">Contact Us</button>
-                <img class="header__logo" src="images/logo.svg">
-            </header>
-
-        </div>
-        <div class="container" id="container_id">
-            <div class="hero__inner">
-                <h1 class="hero__heading">
-                    Your awesome traffic permit consultant.
-                </h1>
-                <button class="hero__heading_get-started"><span>Get started</span></button>
-                <img class="hero__heading_car" src="images/car.svg">
+    <div class="intro">
+        <div class="laptop_form">
+            <div class="form_title">
+                <h2>Office Equipment Store</h3>
             </div>
-        </div>
-    </section>
-    <section class="intro">
-        <div class="container">
-            <img class="intro__image" src="images/intro1.svg">
-            <div class="intro__inner">
-                <h5 class="into__inner_about-us">About us</h5>
-                <p class="into__inner_title">The occupational traffic permit is one of
-                    the most important things in the company when
-                    carrying out freight transport. In fact, it is
-                    a prerequisite for doing business traffic at all. </p>
-            </div>
-            <img class="intro__inner_background" src="./images/intro_title.svg">
-            <p class="intro_inner_paragraph">How do you do when you need to obtain
-                a commercial traffic permit for freight transport to your business?</p>
-        </div>
-    </section>
-    <section class="intro2">
-        <div class="container">
-            <img class="intro__image2" src="images/intro2.svg">
-            <h5 class="intro_inner_how-to-apply">How to apply</h5>
-            <p class="intro__inner_paragraph2">When applying for a traffic permit, there are certain requirements
-                that you must meet that are included in the examination: requirements for
-                professional knowledge, solid establishment, good reputation and financial resources.
-                Important to remember is to confirm your application for a traffic permit by the
-                company's company signer or CEO.</p>
-        </div>
-    </section>
+            <form>
+                <label for="Name">Name</label>
+                <input type="text" id="name">
+                <label for="Price">Price</label>
+                <input type="number" id="price">
+                <label for="Weight">Weight</label>
+                <input type="number" id="weight">
+                <label for="Type">Type</label>
+                <input type="text" id="type">
+                <input type="submit" value="Add" id="form-submit-button">
 
-    <section class="intro">
-        <div class="grid__container">
-            <h5 class="into__inner_about-us2">About us</h5>
-            <h2 class="into__inner_our-awesome-clients">Our Awesome Clients</h2>
-            <div class="intro__inner_clients">
-                <div class="intro__inner_client1">
-                    <p class="intro__inner_feedback1">
-                        Yes, you will need to have the land owner sign the permit
-                        application as the Permittee, and you sign the permit as
-                        the Applicant or Agent for the Permittee.
-                    </p>
-                    <img class="intro__inner_client1_photo" src="images/client1.svg">
-                    <p class="intro__inner_client1_name">Isak Pettersson</p>
+            </form>
+
+            <div class="items-info">
+                <h3>Find item by name</h3>
+                <form>
+                    <input type="text" id="find-input">
+                    <input type="submit" value="Find" id="find-by-name">
+                </form>
+                <div class="found-items">
+
                 </div>
-                <div class="intro__inner_client2">
-                    <p class="intro__inner_feedback2">From most barricade or traffic control companies
-                        located in the phone book.They employ certified Traffic Control Supervisors
-                        (TCS) who can generate and certify the traffic control plan. </p>
-                    <img class="intro__inner_client2_photo" src="images/client2.svg">
-                    <p class="intro__inner_client2_name">Simon Sandberg</p>
-                </div>
-                <div class="intro__inner_client3">
-                    <p class="intro__inner_feedback3">An A-Line, or access restriction deed
-                        is a property right that has been obtained by CDOT for the sole
-                        purpose of prohibiting direct</p>
-                    <img class="intro__inner_client3_photo" src="images/client3.svg">
-                    <p class="intro__inner_client3_name">Isak Pettersson</p>
-                </div>
+                <h3>Sort items</h3>
+                <button type="button" id="sort-items-by-asc">ASC</button>
+                <button type="button" id="sort-items-by-desc">DESC</button>
             </div>
+        </div>
+        <div class="device_list" id="device_list">
+            <h2 id="device_list-total-price"></h2>
+
+            <table class="items-table" id="items-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Weight</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
 
 
         </div>
 
-    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__copyright-div">
-                <p class="footer__copyright">Copyright @ 2019</p>
-            </div>
-            <div class="footer__logo">
-                <img class="footer__logo" src="images/logo.svg">
-            </div>
-            <div class="footer__companies-div">
-                <ul class="footer__companies">
-                    <li><a><img class="footer__facebook__logo" src="images/facebook_logo.svg"></a></li>
-                    <li><a><img class="footer__twitter__logo" src="images/twitter_logo.svg"></a></li>
-                    <li><a><img class="footer__instagram__logo" src="images/instagram_logo.svg"></a></li>
 
-                </ul>
-            </div>
-        </div>
+    </div>
 
-    </footer>
-
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
