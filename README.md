@@ -1,17 +1,11 @@
 # web-labs
 
-# 1 lab task: 
-- Create a landing page following the given design (Figma).
+# 3 lab task: 
+### Make a simple presentation part of a website using JavaScript, you need to implement the following operations on your data
+- Sort of your items option
+- Search option
+- Count total amount of some of the field
 
 # Requirements:
-- Use of semantic tags (header, nav, ul, footer, etc.) wherever is necessary
-  
-- All fonts, colour palette, elements sizes must strictly match the design.
-  
-- Pixel perfect is also not required, BUT your website should visually match the design template (i.e. If the element is horizontally centred on the design, it should look centred on the website)
-  
-- All class names must not be meaningless (i.e. class=”myClass”) and should follow the same naming convention, preferably BEM, but you could come up with your own (just be consistent)
-  
-- Basic cross-browser support (website should look correctly on last versions of modern browsers (Chrome, Safari, Edge)
-  
-- Responsiveness is not required
+- Responsiveness absolutely not required.
+- Styling is not important
