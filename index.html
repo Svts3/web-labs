@@ -14,9 +14,11 @@
 
 <body>
     <div class="intro">
-        <div class="laptop_form">
+        <button class="create_button" id="create_button" value="Create">Create</button>
+        <div class="device_create_form" id="device_create_form">
             <div class="form_title">
-                <h2>Office Equipment Store</h3>
+                <h2 class="create-equipment-h2" id="create-equipment-h2">Create equipment</h2>
+                <h2 class="update-equipment-h2" id="update-equipment-h2">Update equipment</h2>
             </div>
             <form>
                 <label for="Name">Name</label>
@@ -27,11 +29,12 @@
                 <input type="number" id="weight">
                 <label for="Type">Type</label>
                 <input type="text" id="type">
-                <input type="submit" value="Add" id="form-submit-button">
-
+                <input type="submit" value="Create" id="form-submit-button">
+                <input type="submit" value="Update" id="form-update-button">
             </form>
-
-            <div class="items-info">
+        </div>
+            
+            <div id="items-info" class="items-info">
                 <h3>Find item by name</h3>
                 <form>
                     <input type="text" id="find-input">
@@ -44,32 +47,18 @@
                 <button type="button" id="sort-items-by-asc">ASC</button>
                 <button type="button" id="sort-items-by-desc">DESC</button>
             </div>
-        </div>
+            
         <div class="device_list" id="device_list">
             <h2 id="device_list-total-price"></h2>
 
-            <table class="items-table" id="items-table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Weight</th>
-                        <th>Type</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    
-                </tbody>
-            </table>
-
-
-        </div>
-
-
+            <div class="items-table" id="items-table">
+                
+            </div>
 
     </div>
 
-    <script type="module" src="./js/index.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
 </body>
 
 </html>
