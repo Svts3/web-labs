@@ -1,14 +1,19 @@
-const submitButton = document.getElementById("form-submit-button");
 const findButton = document.getElementById("find-by-name");
 const deleteButton = document.getElementById("cancel_find_button");
 const sortItemsByASC = document.getElementById("sort-items-by-asc");
 const sortItemsByDESC = document.getElementById("sort-items-by-desc");
 const createButton = document.getElementById("create_button");
+const submitButton = document.getElementById("form-submit-button");
+const updateButton = document.getElementById("form-update-button");
+
 
 const updateForm = document.getElementById("update_device_form");
 const formTitle = document.getElementById("items-info");
 const createForm = document.getElementById("device_create_form");
 
+const updateEquipmentH2 = document.getElementById("update-equipment-h2");
+
+const createEquipmentH2 = document.getElementById("create-equipment-h2");
 let findInput = document.getElementById("find-input");
 
 let totalPriceH2 = document.getElementById("device_list-total-price");
@@ -58,10 +63,6 @@ const countTotalPrice = (devices) => {
 
 
 
-
-
-
-
 createButton.addEventListener("click", (event) => {
 
   event.preventDefault();
@@ -69,6 +70,12 @@ createButton.addEventListener("click", (event) => {
   createButton.style.display = "none";
   createForm.style.display = "block";
   formTitle.style.display = "none";
+
+  createEquipmentH2.style.display="block";
+  submitButton.style.display="block"
+
+  updateButton.style.display="none";
+  updateEquipmentH2.style.display="none";
 
 });
 
@@ -162,10 +169,17 @@ function updateDevice(id) {
   console.log(devices)
   console.log(deviceToUpdated);
 
+  createEquipmentH2.style.display="none";
+  updateEquipmentH2.style.display="block";
+
+  submitButton.style.display="none";
+  updateButton.style.display="block";
+  
   createButton.style.display = "none";
   createForm.style.display = "block";
   formTitle.style.display = "none";
   totalPriceH2.style.display = "none";
+
   nameInput.value = deviceToUpdated.name;
   priceInput.value = deviceToUpdated.price;
   weightInput.value = deviceToUpdated.weight;
@@ -205,7 +219,6 @@ const renderItemsList = (items) => {
 
 const getInputValues = () => {
   if (validateInputForms()) {
-
     return {
       name: nameInput.value,
       price: priceInput.value,

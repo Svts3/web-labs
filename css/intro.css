@@ -141,4 +141,11 @@
     margin-top: 250px;
 }
 
+#form-update-button{
+    display: none;
+}
+.update-equipment-h2{
+    display: none;
+}
+
 
