@@ -1,13 +1,7 @@
-@import "normalize.min.css";
-
 @import "./globals.css";
-
-@import "./header.css";
-
-@import "./hero.css";
 
 @import "./intro.css";
 
-@import "./footer.css";
+@import "./normalize.min.css";
 
-@import "./media_4k.css";
+@import "./reset.min.css";
