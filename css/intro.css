@@ -4,23 +4,46 @@
     justify-content: center;
 }
 
-.laptop_form{
+.device_create_form{
     margin: 100px;
-    width: 300px;
+    width: 270px;
+    height: 400px;
 }
-.laptop_form input{
+.device_create_form input{
     display: flex;
     flex-direction: column;
     margin: 15px;
 }
-.laptop_form h2{
+.device_create_form h2{
     text-align: center;
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 30px;
     
 }
-.laptop_form label{
+.device_create_form label{
+    font-size: 17px;
+}
+
+.update_device_form{
+    margin: 100px;
+    width: 270px;
+    height: 400px;
+}
+
+.update_device_form input{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+.update_device_form h2{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    
+}
+.update_device_form label{
     font-size: 17px;
 }
 
@@ -29,19 +52,35 @@
 }
 
 .items-table{
-    width: 300px;
+    width: 180px;
+    height: 200px;
 }
-.items-table tr{
-    margin: 0 auto;
-    padding: 0 15px;
+.items-table p {
+    display: flex;
+    justify-content: center;
 }
-.items-table td{
-    margin: 0 auto;
-    padding: 0 15px;
+.items-table button {
+    vertical-align: top;
+    margin-left: 16px;
 }
+.item-card{
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    
+    
+}
+
 .table-element{
     border: 2px solid black;
     border-radius: 40px;
+}
+.item-image{
+    width: 50%;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 
@@ -65,13 +104,41 @@
     margin-top: 150px;
     width: 600px;
     height: 300px;
+    margin-left: 300px;
 }
 .form_title{
     display: block;
     text-align: center;
 }
+.update-equipment-h2{
+    display: none;
+}
+.form-update-button{
+    display: none;
+}
 
 .items-info{
-    margin-top: 50px;
+    position: absolute;
+    height: 130px;
+    width: 200px;
+    margin-top: 570px;
+    left: 189px;
+    
+
+    
 }
+
+.update_device_form{
+    display: none;
+}
+
+.device_create_form{
+    display: none;
+}
+.create_button{
+    width: 150px;
+    height: 50px;
+    margin-top: 250px;
+}
+
 
