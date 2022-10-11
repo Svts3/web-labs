@@ -1,11 +1,14 @@
 # web-labs
 
-# 3 lab task: 
-### Make a simple presentation part of a website using JavaScript, you need to implement the following operations on your data
-- Sort of your items option
-- Search option
-- Count total amount of some of the field
+# 6 lab task: 
+##  Create React App with a simple Home page. Your e-commerce app subject is about your entities from previous (3-5) works.
 
 # Requirements:
-- Responsiveness absolutely not required.
-- Styling is not important
+- You have to use only React.js library for all of your mark-up. Which means - your index.html file shouldn’t be touched.
+- Use create-react-app tool for creating base of your project
+- Your Home page should follow the wireframe, i.e all of the elements ( header, navigation, footer etc. ) from wireframes must be presented on your website.
+- Design: You have to use CSS styling or/and component libraries. Don't overthink it, use your imagination for UI, BUT the work with almost no styling is unacceptable.
+- Functionality: For this work nothing but view only part is required. Any interaction (links/buttons) is not necessary, but you will have to complete them in your next labs.
+# Code style:
+- Project structure: Your UI elements should be logically separated into React components (one file for each component) - at least 5 component files are required. In  other words, you can’t just put all your JSX into 1-2 files.
+- Use Functional components instead of Class components
