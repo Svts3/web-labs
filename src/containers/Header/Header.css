@@ -1,0 +1,86 @@
+.header-buttons{
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;  
+  }
+  .company-name{
+    margin-left: 20px;
+  }
+  
+  
+  .shopping-cart-div button{
+    background-color: black;
+    border: 1px solid black;
+    border-color: black;
+    
+  }
+  .shopping-cart-div button:hover{
+    background-color: black;
+    border: 1px solid black;
+    border-color: black;
+  }
+  .header-buttons-select{
+    margin-left: -80px;
+    height: 20px;
+    border: 0px;
+    border-radius: 3px;
+  }
+  
+  .shopping-cart-button{
+    background-color: black;
+    border: none;
+    border-color: none;
+    border: none;
+  }
+  .shopping-cart-button{
+    background-color: black;
+    border: none;
+    border-color: none;
+    border: none;
+  }
+  
+  
+  .search-button{
+    height: 110%;
+  }
+  .header-input-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-input-div button{
+    height: 29px;
+    width: 45px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .header-catalogue-div button{
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    background-color: grey;
+    border-color: none;
+    border: none;
+  }
+  
+  .header-buttons button{
+    height: 47px;
+    margin: 4px;
+    width: 80px;
+    border-radius: 3px;
+  }
+  .header-input{
+    height: 25px;
+    width: 400px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  
+  }
+  .App-header button:hover{
+    border-color: white;
+  }
+  
+  .header-busket-image{
+    width: 15%;
+    height: 15%;
+  }
