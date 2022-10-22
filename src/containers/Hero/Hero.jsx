@@ -6,7 +6,7 @@ import "./Hero.css";
 export default function Hero() {
     return (
         <><div className='hero'>
-            <div className='hero-catalogue'>
+            <ul className='hero-catalogue'>
                 <li><a>Dictation Machines</a></li>
                 <li><a>Printers</a></li>
                 <li><a>Document Scanners</a></li>
@@ -20,7 +20,7 @@ export default function Hero() {
                 <li><a>Pens</a></li>
                 <li><a>Monitor Stands</a></li>
                 <li><a>Desktop Computers</a></li>
-            </div>
+            </ul>
             <div className='hero-pictures'>
                 <button>&#129044;</button>
                 <button>&#129046;</button>

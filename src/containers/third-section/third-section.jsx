@@ -4,7 +4,7 @@ import scannerImage from "../../images/scanner-image.jpg";
 import scannerImage2 from "../../images/scanner2-image.jpg";
 import shredderImage from "../../images/shredder-image.jpg";
 import boardImage from "../../images/board-image.jpg";
-import "./third-section.jsx";
+import "./third-section.css";
 
 export default function ThirdSection(){
 
@@ -58,7 +58,7 @@ export default function ThirdSection(){
                     </div>
 
                 </div>
-
+                <button className='view-more-button'>View more</button>
             </div>
         
         )
