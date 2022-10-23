@@ -2,6 +2,8 @@ import React from 'react';
 import search from "../../images/search-icon.svg";
 import shoppingCart from "../../images/shopping-cart.png";
 import "./Header.css";
+import Catalogue from "../Catalogue/Catalogue.jsx";
+import { Link } from 'react-router-dom';
 
 
 
@@ -13,7 +15,7 @@ export default function Header(){
           <h3 className='company-name'>Office Goods</h3>
         </div>
         <div className='header-catalogue-div'>
-          <button>Catalogue</button>
+         <Link to={"/catalogue"}><button onClick={Catalogue}>Catalogue</button></Link>
         </div>
         <div className='header-input-div'>
           <input className="header-input" />
