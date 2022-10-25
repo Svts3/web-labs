@@ -1,0 +1,33 @@
+.catalogue-product-printer-image{
+    width:67%;
+    height: 40%;
+    text-align: left;
+  
+  }
+  .catalogue-product{
+    color: black;
+    width: 260px;
+    margin: 25px;
+    height: 370px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+  }
+  .catalogue-product-price{
+    display: inline;
+    width: 5px;
+    margin: 30px;
+  }
+  .catalogue-order-button{
+    width: 75%;
+    height: 30px;
+    border-radius: 4px;
+    margin: 10px;
+    font-weight: bold;
+}
+  .catalogue-product-description{
+    margin: 10px;
+  }
+  .catalogue-product-name{
+    margin: 10px;
+  }

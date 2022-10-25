@@ -8,6 +8,7 @@ export default function CatalogueSelects() {
       <select><option>Filter 1</option></select>
       <select><option>Filter 2</option></select>
       <select><option>Filter 3</option></select>
-  </div><button>Apply</button></>
+  </div>
+  <button><b>Apply</b></button></>
 );
 }

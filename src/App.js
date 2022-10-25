@@ -13,6 +13,7 @@ import {
   Link
 } from "react-router-dom";
 import Catalogue from './containers/Catalogue/Catalogue';
+import ItemInfo from './containers/ItemInfo/ItemInfo';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function AppRoutes(){
     <Routes>
       <Route path='/' element={<><Hero /><SecondSection /><ThirdSection/></>}></Route>
       <Route path='/catalogue' element={<Catalogue/>}></Route>
+      <Route path="/catalogue/:id" element={<ItemInfo />} />
     </Routes>
   );
 }
