@@ -4,6 +4,7 @@ import shoppingCart from "../../images/shopping-cart.png";
 import "./Header.css";
 import Catalogue from "../Catalogue/Catalogue.jsx";
 import { Link } from 'react-router-dom';
+import FindByName from '../Catalogue/FindByName/FindByName';
 
 
 
@@ -12,13 +13,13 @@ export default function Header(){
     return (
     <header className="App-header">
         <div>
-          <h3 className='company-name'>Office Goods</h3>
+          <Link to={"/"} style={{textDecoration:"none"}}><h3 className='company-name'>Office Goods</h3></Link>
         </div>
         <div className='header-catalogue-div'>
          <Link to={"/catalogue"}><button onClick={Catalogue}>Catalogue</button></Link>
         </div>
         <div className='header-input-div'>
-          <input className="header-input" />
+         <FindByName/>
           <button><img className='search-button' src={search}></img></button>
         </div>
         <select className='header-buttons-select' name='language'>

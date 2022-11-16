@@ -5,8 +5,10 @@
   }
   .company-name{
     margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    
   }
-  
   
   .shopping-cart-div button{
     background-color: black;

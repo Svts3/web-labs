@@ -58,10 +58,6 @@ export default function ThirdSection(){
                     </div>
 
                 </div>
-                <div className='view-more-div'>
-                    <button className='view-more-button'>View more</button>
-                <div/>
-                </div>
             </div>
         
         )

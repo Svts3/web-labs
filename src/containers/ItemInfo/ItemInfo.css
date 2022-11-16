@@ -1,0 +1,63 @@
+.catalogue-item-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    justify-content: left;
+}
+
+.item-photo img {
+
+    width: 70%;
+    height: 70%;
+    padding: 50px;
+}
+
+.item-description p{
+    padding: 30px;
+    max-width: 500px;
+    margin-left: -30px;
+
+}
+
+.item-name {
+    text-align: left;
+    font-size: 21px;
+}
+.inputs{
+    text-align: left;
+    margin-left: -50px;
+
+}
+.amount-input{
+    display: inline-block;
+    margin: 50px;
+}
+.amount-input input{
+    height: 30px;
+    border-radius: 5px;
+    width: 180px;
+}
+.selectfield-input{
+    display: inline-block;
+}
+.selectfield-input select{
+    height: 30px;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.item-second-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 23px;
+    margin: 70px;
+}
+
+.item-second-section-buttons button{
+    margin-left: 30px;
+    height: 40px;
+    width: 130px;
+    border-radius: 5px;
+}
+
