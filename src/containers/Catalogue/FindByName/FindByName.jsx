@@ -17,7 +17,7 @@ export default function FindByName(props) {
     }
   return (
     <>
-     <input className="header-input" onChange={a} onClick={props.clear}/>
+     <input className="header-input" onChange={a}/>
     </>
   );
 }

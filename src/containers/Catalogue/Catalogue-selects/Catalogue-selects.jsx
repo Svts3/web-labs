@@ -71,18 +71,18 @@ export default function CatalogueSelects() {
     }} />
 
     <FindByName searchItems={(value)=>{
+      console.log("Value: "+value.length);
+      setDisplay([...display].filter(item => item.name.toLowerCase().search(value.toLowerCase()) !== -1))
       if(value.length == 0){
         setDisplay(items); 
       }
-      console.log(value);
-        setDisplay([...display].filter(item => item.name.toLowerCase().search(value.toLowerCase()) !== -1))
     }} />
   </div>
 
   <div className='catalogue-header-apply'>
     <button onClick={(e)=>{
       setDisplay(items);
-    }}>Clear</button>
+    }}>Reset</button>
   </div>
   <hr></hr>
     </div>
