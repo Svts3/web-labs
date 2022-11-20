@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: rgb(0, 0, 0);
+  height: 75px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.App-header button{
+  height: 75px;
+  border: 1px solid rgb(255, 195, 92);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+
+
+
