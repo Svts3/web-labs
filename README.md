@@ -1,14 +1,15 @@
 # web-labs
 
-# 6 lab task: 
-##  Create React App with a simple Home page. Your e-commerce app subject is about your entities from previous (3-5) works.
+# 9 lab task: 
+Description: Implement interaction with your REST API server.
 
 # Requirements:
-- You have to use only React.js library for all of your mark-up. Which means - your index.html file shouldn’t be touched.
-- Use create-react-app tool for creating base of your project
-- Your Home page should follow the wireframe, i.e all of the elements ( header, navigation, footer etc. ) from wireframes must be presented on your website.
-- Design: You have to use CSS styling or/and component libraries. Don't overthink it, use your imagination for UI, BUT the work with almost no styling is unacceptable.
-- Functionality: For this work nothing but view only part is required. Any interaction (links/buttons) is not necessary, but you will have to complete them in your next labs.
-# Code style:
-- Project structure: Your UI elements should be logically separated into React components (one file for each component) - at least 5 component files are required. In  other words, you can’t just put all your JSX into 1-2 files.
-- Use Functional components instead of Class components
+
+All of the requirements for previous React.js works should be kept.
+## Code style:
+- For any http request - use axios library
+- All your API functions should be separated into single file (or folder, if you want) - just like you saw in Live coding for 5 lab with fetch() function
+## Functionality:
+- On Catalog Page - all items should now be fetched from your backend with GET method (using axios)
+- Search with filters - should also be implemented with GET request (search by text field can be left as it is)
+- Before response from your GET method is received you have to display a Spinner(Loader component) to the user. 
