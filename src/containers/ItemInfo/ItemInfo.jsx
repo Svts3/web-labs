@@ -4,24 +4,40 @@ import { items } from "../Catalogue/Catalogue.jsx"
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { createContext } from 'react';
+import { findEqupmentById } from '../ApiRequests/ApiGetAll';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import LoadingSpinner from '../Catalogue/loading-spinner/loadingSpinner';
 
 export default function ItemInfo() {
 
     const { id } = useParams();
+    const [loading, setLoading] = useState(false);
 
-    const itemContext = createContext(items.find(item => item.id == id));
+
+    const[item, setItem] = useState({});
+
+    useEffect(()=>{
+        setLoading(true);
+        findEqupmentById(id).then((item)=>{
+            setItem(item);
+        })
+        setTimeout(setLoading(false),300);
+    },[]);
 
     console.log("id: " + id);
-    console.log(itemContext)
     return (
         <div>
+        {loading? <LoadingSpinner/>:
         <div className='catalogue-item-info'>
+        
             <div className='item-photo'>
-                <img src={useContext(itemContext).image}></img>
+                <img src={item.imageDestination}></img>
+                {console.log("Image destination: "+item.imageDestination)}
             </div>
             <div className='item-description'>
-                <h4 className='item-name'>{useContext(itemContext).name}</h4>
-                <p>{useContext(itemContext).description}</p>
+                <h4 className='item-name'>{item.name}</h4>
+                <p>{item.description}</p>
             <div className='inputs'>
                 <div className='amount-input'>
                     <p>Amount</p>
@@ -36,8 +52,9 @@ export default function ItemInfo() {
             </div>
             </div>
         </div>
+        }
         <div className='item-second-section'>
-        <p className='item-second-section-price'>Price: {useContext(itemContext).price} $</p>
+        <p className='item-second-section-price'>Price: {item.price} $</p>
         <div className='item-second-section-buttons'>
            <Link to={"/catalogue"}><button><b>Back</b></button></Link>
             <button><b>Add to cart</b></button>

@@ -7,11 +7,29 @@ import { items, RenderItems } from '../Catalogue';
 import "../Catalogue-selects/Catalogue-select.css";
 import FindByName from '../FindByName/FindByName';
 import Select from "../Selects/Select.jsx";
+import {findAllEquipments, findEqupmentByColor, findEqupmentById, findEqupmentByType} from "../../ApiRequests/ApiGetAll.js";
+import LoadingSpinner from '../loading-spinner/loadingSpinner';
 
 
 
 export default function CatalogueSelects() {
-  const [display, setDisplay] = useState(items);
+  const [display, setDisplay] = useState([]);
+
+  const[items, setItems]  = useState([]);
+
+  const[loading, setLoading] = useState(false);
+
+
+  useEffect(()=>{
+    setLoading(true);
+    findAllEquipments().then((item)=>{
+        setItems(Object.values(item));
+        setDisplay(Object.values(item));
+    });
+    setTimeout(()=>setLoading(false), 300);
+    
+  }, []);
+  
   return (
   <>
   <div className='catalogue-filters'>
@@ -26,12 +44,19 @@ export default function CatalogueSelects() {
       ]
     }
     handleChange={(e) => {
+      setLoading(true);
       console.log("E TARGET VALUE: ",e.target.value);
       setDisplay(items.filter(item => item.type == e.target.value));
       console.log("FILTERED LIST: ", display);
       if (e.target.value == "All") {
         setDisplay(items);
+      }else{
+        findEqupmentByType(e.target.value).then((item)=>{
+          setDisplay(Object.values(item));
+        });
+
       }
+      setTimeout(()=>setLoading(false), 300);
       }} />
 
     <Select options={
@@ -43,10 +68,17 @@ export default function CatalogueSelects() {
       ]
     }
     handleChange={(e) => {
+      setLoading(true);
       setDisplay(items.filter(item => item.color == e.target.value));
       if (e.target.value == "All") {
         setDisplay(items);
+      }else{
+        findEqupmentByColor(e.target.value).then((item)=>{
+          setDisplay(Object.values(item));
+        }
+        )
       }
+      setTimeout(()=>setLoading(false), 300);
     }} />
     <Select options={
       [
@@ -56,6 +88,7 @@ export default function CatalogueSelects() {
     }
     handleChange={(e) => {
       setDisplay();
+      setLoading(true);
       if (e.target.value == "ASC") {
         setDisplay([...display].sort((item1, item2)=>{
           return item1.price - item2.price;
@@ -68,14 +101,17 @@ export default function CatalogueSelects() {
         })
         )
       }
+      setTimeout(()=>setLoading(false), 300);
     }} />
 
     <FindByName searchItems={(value)=>{
+      setLoading(true);
       console.log("Value: "+value.length);
       setDisplay([...display].filter(item => item.name.toLowerCase().search(value.toLowerCase()) !== -1))
       if(value.length == 0){
         setDisplay(items); 
       }
+      setTimeout(()=>setLoading(false), 300);
     }} />
   </div>
 
@@ -87,7 +123,7 @@ export default function CatalogueSelects() {
   <hr></hr>
     </div>
    <div className='catalogue' id='catalogue'>
-      <RenderItems items={display} />
+      {loading? <LoadingSpinner/> : <RenderItems items={display} />}
 
  </div>
  </>

@@ -6,7 +6,8 @@ import MoreAboutItem from './MoreItems/MoreAboutItems';
 
 export default function ItemTemplate(props) {
   return (<div className='catalogue-product' key={props.id}>
-  <img className='catalogue-product-printer-image' src={props.image}></img>
+  <img className='catalogue-product-printer-image' src={props.imageDestination}></img>
+  {console.log(props.imageDestination)}
   <div className='catalogue-product-info'>
       <p className='catalogue-product-name'><b>{props.name}</b></p>
       <p className='catalogue-product-description'>{props.description}</p>
