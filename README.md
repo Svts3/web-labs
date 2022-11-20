@@ -1,14 +1,15 @@
 # web-labs
 
-# 6 lab task: 
-##  Create React App with a simple Home page. Your e-commerce app subject is about your entities from previous (3-5) works.
+# 10 lab task: 
+Description: Create the first of three cart pages - Shopping cart page.
 
 # Requirements:
-- You have to use only React.js library for all of your mark-up. Which means - your index.html file shouldn’t be touched.
-- Use create-react-app tool for creating base of your project
-- Your Home page should follow the wireframe, i.e all of the elements ( header, navigation, footer etc. ) from wireframes must be presented on your website.
-- Design: You have to use CSS styling or/and component libraries. Don't overthink it, use your imagination for UI, BUT the work with almost no styling is unacceptable.
-- Functionality: For this work nothing but view only part is required. Any interaction (links/buttons) is not necessary, but you will have to complete them in your next labs.
-# Code style:
-- Project structure: Your UI elements should be logically separated into React components (one file for each component) - at least 5 component files are required. In  other words, you can’t just put all your JSX into 1-2 files.
-- Use Functional components instead of Class components
+
+All of the requirements for previous React.js works should be kept.
+## Functionality:
+- Item page: “Add to cart” action should be implemented using Redux flow: when you add an item to cart, it should be added to your redux store. On Cart page you take all of the items from the store
+- Cart page: “add/remove” actions should be implemented through redux actions & reducers as well.
+## Code style:
+- Redux: All Redux parts (actions / reducers / store) should be kept in separate and specific files (actions.js / reducers.js / store.js etc.)
+- Use useSelector hook for getting the data from redux store (instead of connect() function)
+- Use useDispatch hook for dispatching your actions (instead of connect() function)
